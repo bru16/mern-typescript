@@ -1,0 +1,28 @@
+@api = http://localhost:4000/api
+
+### get Videos
+GET {{api}}/videos
+
+### get video by id
+GET {{api}}/videos/608f21d23cae91776c110349
+
+### create new video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "title":"Video test",
+    "description":"This is a test",
+    "url": "https://www.youtube.com/watch?v=_RZ-T6TxP7w"
+}
+
+### update video
+PUT {{api}}/videos/608f25725d43ba804ccf7136
+Content-Type: application/json
+
+{
+    "title": "This title was changed twice",
+    "url": "https://www.youtube.com/watch?v=wOLo-B7mrZM"
+}
+### delete video
+DELETE {{api}}/videos/608f21d23cae91776c110349
