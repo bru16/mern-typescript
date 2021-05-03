@@ -4,6 +4,6 @@ Technologies used:
 * Typescript
 * Express
 * Node
-* Mongoose
+* MongoDB / Mongoose
 
 Simple mern application with crud operations.
